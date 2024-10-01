@@ -1,0 +1,55 @@
+body {
+    font-family: Arimo, Arial, sans-serif;
+    font-size: 1em;
+    background-color: #f6f8ca;
+    padding: 0.8em;
+}
+
+header, article, footer {
+    background-color: #1F8A70;
+    color: #f6f8ca;
+    padding: 0.8em;
+    margin: 0.5em;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+footer{
+    font-size: 0.8em;
+}
+
+h1 {
+    background-image: url(images/ile-de-batz.jpg);
+    font-family: Roboto;
+    font-size: 4em;
+    width: 80%;
+}
+
+h2 {
+    font-family: Roboto;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+img {
+    margin: 0.5em 1em;
+    box-shadow: 5px;
+}
+
+nav {
+    background-color: #f6f8ca;
+    width: 7em;
+}
+
+h2 + ul > li{
+    list-style-image: url("images/puce-fleur.png");
+}
+
+strong, em {
+    background-color: #f6f8ca;
+    color: #1F8A70;
+}
