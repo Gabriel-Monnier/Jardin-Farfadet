@@ -16,13 +16,18 @@ header, article, footer {
 
 footer{
     font-size: 0.8em;
+    text-align: center;
 }
 
 h1 {
+    color: #1F8A70;
     background-image: url(images/ile-de-batz.jpg);
     font-family: Roboto;
     font-size: 4em;
     width: 80%;
+    height: 4em;
+    display: inline-block;
+    text-align: center;
 }
 
 h2 {
@@ -34,6 +39,22 @@ section {
     flex-direction: row;
     justify-content: center;
 }
+p {
+    display: inline-block;
+}
+
+aside {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 7em;
+    background-color: #f6f8ca;
+    width: 7em;
+    border: #1F8A70 1px solid;
+}
 
 img {
     margin: 0.5em 1em;
@@ -41,8 +62,35 @@ img {
 }
 
 nav {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     background-color: #f6f8ca;
-    width: 7em;
+    width: 90em;
+    height: 3em;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > ul > li {
+    width: 6em;
+    font-size: 1.5em;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #1F8A70;
+    color: #f6f8ca;
+}
+
+a {
+    text-decoration: none;
+    color: #f6f8ca;
+}
+
+h2 +ul {
+    padding-left: 20em;
+    display: inline-block;
 }
 
 h2 + ul > li{
@@ -52,4 +100,16 @@ h2 + ul > li{
 strong, em {
     background-color: #f6f8ca;
     color: #1F8A70;
+}
+
+figure {
+    display: inline-flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+article > p {
+    display: inline-block;
 }
